@@ -8,6 +8,9 @@
 <meta charset = "utf-8">
 
 <style>
+    body{
+        margin : 0;
+    }
 a {
     color : black;
     text-decoration : none;
@@ -16,27 +19,49 @@ a {
 }
 h1 {
     font-size : 100px;
-    text-align: center;
+    text-align: left;
+    border-bottom : 1px gray solid;
+    margin:0;
+    padding : 20px;
+}
+ol {
+border-right : 1px solid gray;
+width : 100px;
+margin : 0;
+padding : 20px;
+
 }
 
 
-.saw{
-    color : grey;
+
+
+#grid {
+    
+        display : grid;
+        grid-template-columns: 150px 1fr; /*크기 자동조절 fr*/
 }
 
-#active{
-    color:red;
+#grid ol {
+    padding-right : 0;
+padding-left : 40px;
 }
 
+#grid #article {
+    padding-left : 30px;
+}
 </style>
 
 </head>
 
 <body>
 
+
+
     <h1><a href = "index.html">WEB</a></h1>
+    
+<div id = "grid">   
 <ol>
-    <li><a href = "1.html" class = "saw" id = "active">Html</a></li>
+    <li><a href = "1.html" >Html</a></li>
     <li><a href = "2.html" >Css</a></li>
     <li><a href = "3.html">Javascript</a></li>
 </ol>
@@ -51,6 +76,7 @@ h1 {
 -->
 
 
+<div id = "article">
 <h2>HTML</h2>
 
 <strong>I'm html</strong>
@@ -64,7 +90,9 @@ h1 {
 
 
 <img src = "coding.jpg" width = "100%">
+</div>
 
+</div>
 </body>
 
 </html>
